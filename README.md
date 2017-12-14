@@ -15,7 +15,7 @@ presented here.
 
 ## Prerequisites
 
--   [js-reference-types](https://github.com/ga-wdi-boston/js-reference-types)
+-   [js-reference-types](https://git.generalassemb.ly/ga-wdi-boston/js-reference-types)
 -   Familiarity with the concept of arrays.
 
 ## Instructions
@@ -29,9 +29,9 @@ presented here.
 Starter code is available in [`lib/challenge.js`](lib/challenge.js). A pull
 request is not required, but it is necessary if you want a code review.
 
-You may wish to refer to [FAQs](https://github.com/ga-wdi-boston/meta/wiki/)
+You may wish to refer to [FAQs](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/)
 related to [forking,
-cloning](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone).
+cloning](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone).
 
 ## Requirements
 
