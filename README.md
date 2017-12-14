@@ -59,10 +59,6 @@ You should run `grunt nag` before diagnosing any bugs, since it finds some of
 After `grunt nag` passes, you should run `grunt test` to run the included tests.
 Tests will tell you whether of not you've met these requirements.
 
-## Bonuses
-
-Only try these after completing the main challenge.
-
 ### Big Boggle challenge
 
 Big Boggle uses a 5X5 tray.
@@ -74,6 +70,24 @@ bonus.
 - xdescribe('Big Boggle', () => {
 + describe('Big Boggle', () => {
 ```
+
+## Further Explanation
+
+If we think of it in terms of a 4 x 4 game board.
+```
+d  i  b  t
+l  o  a  m
+b  c  g  r
+u  m  p  s
+```
+The the coordinate `0, 0` would give us `d`.
+The the coordinate `1, 1` would give us `o`.
+The the coordinate `2, 2` would give us `g`.
+And the coordinates `0,0`,  `1,1` and `2,2` would give us `dog`
+
+## Bonuses
+
+Only try these after completing the main challenge.
 
 ### Super Big Boggle challenge
 
@@ -94,6 +108,25 @@ bonus.
 -   Disallow coordinate pairs that aren't in a line
 
 Return the empty string if a validation fails
+
+## Hints!
+
+> A tray is just an array of length 16 with each element a single letter string.
+>[Example in tests](https://git.generalassemb.ly/ga-wdi-boston-migrated/js-boggle-challenge/blob/solution/spec/challenge.spec.js#L12)
+>Become familiar with checking the tests for examples like the one below.
+> ```
+>const tray = 'dibtloambcgrumps'.split('');
+>```
+> A list of coordinate pairs is an array with length <= 4 and each element is an array of length 2. The sub-arrays contain two integers >= 0 and <= 3.
+>[Example in tests](https://git.generalassemb.ly/ga-wdi-boston-migrated/js-boggle-challenge/blob/solution/spec/challenge.spec.js#L14)
+>```
+>const coordPairs = [ [0, 0], [1, 1], [2, 2], [3, 3] ];
+>```
+>Write a function - in lib/challenge.js - that takes a tray and a list of coordinate pairs and returns a string representing the concatenation of the letters at each of the coordinates.
+>[Example in tests](https://git.generalassemb.ly/ga-wdi-boston-migrated/js-boggle-challenge/blob/solution/spec/challenge.spec.js#L21)
+>```
+> boggle(tray, coordPairs) // "dogs"
+>```
 
 ## [License](LICENSE)
 
