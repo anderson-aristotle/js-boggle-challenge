@@ -120,7 +120,7 @@ A tray is just an array of length 16 with each element a single letter string.
 Become familiar with checking the tests for examples.
 
 ```
-const tray = 'dibtloambcgrumps'.split('');
+const tray = 'dibtloambcgrumps'.split('')
 ```
 
 A list of coordinate pairs is an array with length <= 4 and each element is an array of length 2. The sub-arrays contain two integers >= 0 and <= 3.
@@ -128,7 +128,7 @@ A list of coordinate pairs is an array with length <= 4 and each element is an a
 [Example in tests](https://git.generalassemb.ly/ga-wdi-boston-migrated/js-boggle-challenge/blob/solution/spec/challenge.spec.js#L14)
 
 ```
-const coordPairs = [ [0, 0], [1, 1], [2, 2], [3, 3] ];
+const coordPairs = [ [0, 0], [1, 1], [2, 2], [3, 3] ]
 ```
 
 Write a function - in lib/challenge.js - that takes a tray and a list of coordinate pairs and returns a string representing the concatenation of the letters at each of the coordinates.
