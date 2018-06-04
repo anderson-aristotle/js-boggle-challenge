@@ -15,16 +15,16 @@ presented here.
 
 ## Prerequisites
 
--   [js-reference-types](https://git.generalassemb.ly/ga-wdi-boston/js-reference-types)
--   Familiarity with the concept of arrays.
+- [js-reference-types](https://git.generalassemb.ly/ga-wdi-boston/js-reference-types)
+- Familiarity with the concept of arrays.
 
 ## Instructions
 
-1.  Fork and clone this repository.
-1.  Change into the new directory.
-1.  Install dependencies.
-1.  Create and checkout a new branch to work on.
-1.  Fulfill the listed requirements.
+1. Fork and clone this repository.
+1. Change into the new directory.
+1. Install dependencies.
+1. Create and checkout a new branch to work on.
+1. Fulfill the listed requirements.
 
 Starter code is available in [`lib/challenge.js`](lib/challenge.js). A pull
 request is not required, but it is necessary if you want a code review.
@@ -74,12 +74,14 @@ bonus.
 ## Further Explanation
 
 If we think of it in terms of a 4 x 4 game board.
+
 ```
 d  i  b  t
 l  o  a  m
 b  c  g  r
 u  m  p  s
 ```
+
 The the coordinate `0, 0` would give us `d`.
 The the coordinate `1, 1` would give us `o`.
 The the coordinate `2, 2` would give us `g`.
@@ -103,33 +105,42 @@ bonus.
 
 ### Validate inputs
 
--   Ensure tray has the correct length
--   Ensure that coordinates fall within the tray
--   Disallow coordinate pairs that aren't in a line
+- Ensure tray has the correct length
+- Ensure that coordinates fall within the tray
+- Disallow coordinate pairs that aren't in a line
 
 Return the empty string if a validation fails
 
-## Hints!
+## Hints
 
-> A tray is just an array of length 16 with each element a single letter string.
->[Example in tests](https://git.generalassemb.ly/ga-wdi-boston-migrated/js-boggle-challenge/blob/solution/spec/challenge.spec.js#L12)
->Become familiar with checking the tests for examples like the one below.
-> ```
->const tray = 'dibtloambcgrumps'.split('');
->```
-> A list of coordinate pairs is an array with length <= 4 and each element is an array of length 2. The sub-arrays contain two integers >= 0 and <= 3.
->[Example in tests](https://git.generalassemb.ly/ga-wdi-boston-migrated/js-boggle-challenge/blob/solution/spec/challenge.spec.js#L14)
->```
->const coordPairs = [ [0, 0], [1, 1], [2, 2], [3, 3] ];
->```
->Write a function - in lib/challenge.js - that takes a tray and a list of coordinate pairs and returns a string representing the concatenation of the letters at each of the coordinates.
->[Example in tests](https://git.generalassemb.ly/ga-wdi-boston-migrated/js-boggle-challenge/blob/solution/spec/challenge.spec.js#L21)
->```
-> boggle(tray, coordPairs) // "dogs"
->```
+A tray is just an array of length 16 with each element a single letter string.
+
+[Example in tests](https://git.generalassemb.ly/ga-wdi-boston-migrated/js-boggle-challenge/blob/solution/spec/challenge.spec.js#L12)
+
+Become familiar with checking the tests for examples.
+
+```
+const tray = 'dibtloambcgrumps'.split('')
+```
+
+A list of coordinate pairs is an array with length <= 4 and each element is an array of length 2. The sub-arrays contain two integers >= 0 and <= 3.
+
+[Example in tests](https://git.generalassemb.ly/ga-wdi-boston-migrated/js-boggle-challenge/blob/solution/spec/challenge.spec.js#L14)
+
+```
+const coordPairs = [ [0, 0], [1, 1], [2, 2], [3, 3] ]
+```
+
+Write a function - in lib/challenge.js - that takes a tray and a list of coordinate pairs and returns a string representing the concatenation of the letters at each of the coordinates.
+
+[Example in tests](https://git.generalassemb.ly/ga-wdi-boston-migrated/js-boggle-challenge/blob/solution/spec/challenge.spec.js#L21)
+
+```
+boggle(tray, coordPairs) // "dogs"
+```
 
 ## [License](LICENSE)
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+1. All software code is licensed under GNU GPLv3. For commercial use or
     alternative licensing, please contact legal@ga.co.
