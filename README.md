@@ -75,7 +75,7 @@ bonus.
 
 If we think of it in terms of a 4 x 4 game board.
 
-```
+```md
 d  i  b  t
 l  o  a  m
 b  c  g  r
@@ -119,23 +119,26 @@ A tray is just an array of length 16 with each element a single letter string.
 
 Become familiar with checking the tests for examples.
 
-```
+```js
 const tray = 'dibtloambcgrumps'.split('')
 ```
 
-A list of coordinate pairs is an array with length <= 4 and each element is an array of length 2. The sub-arrays contain two integers >= 0 and <= 3.
+A list of coordinate pairs is an array with length <= 4 and each element is an
+array of length 2. The sub-arrays contain two integers >= 0 and <= 3.
 
 [Example in tests](https://git.generalassemb.ly/ga-wdi-boston-migrated/js-boggle-challenge/blob/solution/spec/challenge.spec.js#L14)
 
-```
+```js
 const coordPairs = [ [0, 0], [1, 1], [2, 2], [3, 3] ]
 ```
 
-Write a function - in lib/challenge.js - that takes a tray and a list of coordinate pairs and returns a string representing the concatenation of the letters at each of the coordinates.
+Write a function - in lib/challenge.js - that takes a tray and a list of
+coordinate pairs and returns a string representing the concatenation of the
+letters at each of the coordinates.
 
 [Example in tests](https://git.generalassemb.ly/ga-wdi-boston-migrated/js-boggle-challenge/blob/solution/spec/challenge.spec.js#L21)
 
-```
+```js
 boggle(tray, coordPairs) // "dogs"
 ```
 
